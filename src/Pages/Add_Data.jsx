@@ -445,7 +445,7 @@ console.log(modalContent);
                     name={`attendance.${key}`}
                     value={formData.attendance[key]}
                     onChange={handleInputChange}
-                    className="input input-bordered w-full text-black"
+                    className="input input-bordered w-full "
                   />
                 </div>
               ))}
@@ -477,7 +477,7 @@ console.log(modalContent);
                 name="starImage"
                 value={formData.starImage}
                 onChange={handleInputChange}
-                className="input input-bordered w-full text-black"
+                className="input input-bordered w-full "
                 placeholder="https://example.com/image.jpg"
               />
             </div>
@@ -492,7 +492,7 @@ console.log(modalContent);
               name="starReviews"
               value={formData. starReviews}
               onChange={handleInputChange}
-              className="input input-bordered w-full text-black"
+              className="input input-bordered w-full "
               placeholder="Medical Checkup, Awareness Session"
             />
           </div>
@@ -506,7 +506,7 @@ console.log(modalContent);
               name="activities"
               value={formData.activities}
               onChange={handleInputChange}
-              className="input input-bordered w-full text-black"
+              className="input input-bordered w-full"
               placeholder="Medical Checkup, Awareness Session"
             />
           </div>
@@ -524,7 +524,7 @@ console.log(modalContent);
                   name="others.busNo"
                   value={formData.others.busNo}
                   onChange={handleInputChange}
-                  className="input input-bordered w-full text-black"
+                  className="input input-bordered w-full "
                   placeholder="MH3010"
                 />
               </div>
@@ -539,7 +539,7 @@ console.log(modalContent);
                   name="others.smcCount"
                   value={formData.others.smcCount}
                   onChange={handleInputChange}
-                  className="input input-bordered w-full text-black"
+                  className="input input-bordered w-full "
                   placeholder="0"
                 />
               </div>
@@ -554,7 +554,7 @@ console.log(modalContent);
                   name="others.ngoCount"
                   value={formData.others.ngoCount}
                   onChange={handleInputChange}
-                  className="input input-bordered w-full text-black"
+                  className="input input-bordered w-full "
                   placeholder="1"
                 />
               </div>
@@ -569,7 +569,7 @@ console.log(modalContent);
                   name="others.govtOfficials"
                   value={formData.others.govtOfficials}
                   onChange={handleInputChange}
-                  className="input input-bordered w-full text-black"
+                  className="input input-bordered w-full "
                   placeholder="2"
                 />
               </div>
@@ -583,7 +583,7 @@ console.log(modalContent);
                   rows="3"
                   value={formData.others.challenges}
                   onChange={handleInputChange}
-                  className="textarea textarea-bordered w-full text-black"
+                  className="textarea textarea-bordered w-full "
                   placeholder="Challenges if any"
                 />
               </div>
@@ -599,7 +599,7 @@ console.log(modalContent);
                     name={`others.images[${i}].url`}
                     value={formData.others.images[i].url}
                     onChange={handleInputChange}
-                    className="input input-bordered w-full mb-2 text-black"
+                    className="input input-bordered w-full mb-2 "
                   />
                   <input
                     type="text"
@@ -607,7 +607,7 @@ console.log(modalContent);
                     name={`others.images[${i}].caption`}
                     value={formData.others.images[i].caption}
                     onChange={handleInputChange}
-                    className="input input-bordered w-full text-black"
+                    className="input input-bordered w-full "
                   />
                 </div>
               ))}
@@ -771,14 +771,14 @@ console.log(modalContent);
 
             {modalContent.images && modalContent.images.length > 0 && (
               <div>
-                <strong>Images of Event:</strong>
+                <strong className='text-black-800'>Images of Event:</strong>
                 <div className="grid grid-cols-1 gap-4 mt-2">
                   {modalContent.images.map((imgObj, i) =>
                     imgObj.url ? (
                       <figure key={i} className="max-w-full">
                         <img src={imgObj.url} alt={imgObj.caption || `Event image ${i + 1}`} />
                         {imgObj.caption && (
-                          <figcaption className="text-center text-sm font-semibold">
+                          <figcaption className="text-center text-sm font-semibold text-black-800">
                             {imgObj.caption}
                           </figcaption>
                         )}
