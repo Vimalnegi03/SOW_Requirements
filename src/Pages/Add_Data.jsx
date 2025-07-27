@@ -590,9 +590,9 @@ console.log(modalContent);
             </div>
 
             <div>
-              <p className="font-semibold mb-2">Event Images & Captions (up to 2)</p>
+              <p className="font-semibold mb-2  text-black">Event Images & Captions (up to 2)</p>
               {[0, 1].map((i) => (
-                <div key={i} className="mb-4 text-black">
+                <div key={i} className="mb-4">
                   <input
                     type="text"
                     placeholder="Image URL"
@@ -713,7 +713,7 @@ console.log(modalContent);
           >
             <h2
               id="modal-star-title"
-              className="text-2xl font-bold mb-4 text-center text-black"
+              className="text-2xl font-bold mb-4 text-center "
             >
               Student Details
             </h2>
@@ -721,14 +721,14 @@ console.log(modalContent);
             <img
               src={modalContent.starImage || 'https://images.pexels.com/photos/15612102/pexels-photo-15612102.jpeg'}
               alt={modalContent}
-              className="mx-auto mb-4 rounded w-full max-w-xs object-cover text-black"
+              className="mx-auto mb-4 rounded w-full max-w-xs object-cover "
               style={{ maxHeight: '200px', objectFit: 'cover' }}
             />
-            <p className="text-center text-lg font-semibold mb-2 text-black">{modalContent.star}</p>
-            <p className="text-center mb-4 text-black">
+            <p className="text-center text-lg font-semibold mb-2 ">{modalContent.star}</p>
+            <p className="text-center mb-4 ">
               <strong>School:</strong> {modalContent.place}
             </p>
-            <p className="mb-4 text-black">
+            <p className="mb-4">
               {modalContent?.starReviews}
             </p>
 
@@ -758,7 +758,7 @@ console.log(modalContent);
           >
             <h2
               id="modal-others-title"
-              className="text-2xl font-bold mb-4 text-center text-black"
+              className="text-2xl font-bold mb-4 text-center "
             >
               Other Data About Visit -:
             </h2>
