@@ -280,7 +280,7 @@ console.log(modalContent);
     <>
     <Headers/>
     <div className="p-6 bg-gray-50 min-h-screen">
-      <h2 className="text-3xl font-extrabold text-center mb-8">SOW school visits details</h2>
+      <h2 className="text-3xl font-extrabold text-center mb-8 text-black">SOW school visits details</h2>
 
       <div className="flex justify-center mb-6">
         <button
