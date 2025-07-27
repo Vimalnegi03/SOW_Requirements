@@ -294,7 +294,7 @@ console.log(modalContent);
       {formOpen && (
         <form
           onSubmit={handleSubmit}
-          className="max-w-6xl mx-auto bg-white p-6 rounded shadow mb-8"
+          className="max-w-6xl mx-auto  p-6 rounded shadow mb-8"
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             <div>
@@ -430,7 +430,7 @@ console.log(modalContent);
             </div>
           </div>
 
-          <fieldset className="border border-gray-300 p-4 rounded mb-6">
+          <fieldset className="border  p-4 rounded mb-6">
             <legend className="font-semibold text-lg mb-3 text-black">Attendance</legend>
             <div className="grid grid-cols-1 sm:grid-cols-5 gap-4">
               {['teachers', 'parents', 'students', 'male', 'female'].map((key) => (
@@ -511,7 +511,7 @@ console.log(modalContent);
             />
           </div>
 
-          <fieldset className="border border-gray-300 p-4 rounded mb-6">
+          <fieldset className="border  p-4 rounded mb-6">
             <legend className="font-semibold text-lg mb-3 text-black">Others</legend>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
               <div>
@@ -626,30 +626,30 @@ console.log(modalContent);
       )}
 
       {/* Data Table */}
-      <div className="overflow-x-auto border border-gray-300 rounded-lg shadow-lg">
+      <div className="overflow-x-auto border rounded-lg shadow-lg">
         <table className="min-w-[1100px] w-full border-collapse">
-          <thead className="bg-gray-100 sticky top-0 z-20">
+          <thead className=" sticky top-0 z-20">
             <tr>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Visit Details</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Team Members</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Visit Type</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Visit Place</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Objective</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Feedback</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Parents</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Teachers</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Students</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Male</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Female</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Star</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Activities</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Others</th>
+              <th className="border  px-3 sm:px-4 py-3 text-black">Visit Details</th>
+              <th className="border  px-3 sm:px-4 py-3 text-black">Team Members</th>
+              <th className="border  px-3 sm:px-4 py-3 text-black">Visit Type</th>
+              <th className="border px-3 sm:px-4 py-3 text-black">Visit Place</th>
+              <th className="border  px-3 sm:px-4 py-3 text-black">Objective</th>
+              <th className="border  px-3 sm:px-4 py-3 text-black">Feedback</th>
+              <th className="border  px-3 sm:px-4 py-3 text-black">Parents</th>
+              <th className="border px-3 sm:px-4 py-3 text-black">Teachers</th>
+              <th className="border  px-3 sm:px-4 py-3 text-black">Students</th>
+              <th className="border  px-3 sm:px-4 py-3 text-black">Male</th>
+              <th className="border  px-3 sm:px-4 py-3 text-black">Female</th>
+              <th className="border px-3 sm:px-4 py-3 text-black">Star</th>
+              <th className="border  px-3 sm:px-4 py-3 text-black">Activities</th>
+              <th className="border  px-3 sm:px-4 py-3 text-black">Others</th>
             </tr>
           </thead>
           <tbody>
             {visits.map((visit) => (
               <tr key={visit.id || visit.start + visit.end} className="hover:bg-blue-50">
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-left align-top">
+                <td className="border px-3 sm:px-4 py-2 text-left align-top">
                   <div>
                     <div className='text-black'><strong>Start:</strong> {visit.start}</div>
                     <div className='text-black'><strong>End:</strong> {visit.end}</div>
@@ -657,18 +657,18 @@ console.log(modalContent);
                     <div className='text-black'><strong>Days:</strong> {visit.days}</div>
                   </div>
                 </td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.team}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.visitType}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.place}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.objective}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.feedback}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.parents}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.teachers}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.students}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.male}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.female}</td>
+                <td className="border  px-3 sm:px-4 py-2 text-center text-black">{visit.team}</td>
+                <td className="border  px-3 sm:px-4 py-2 text-center text-black">{visit.visitType}</td>
+                <td className="border  px-3 sm:px-4 py-2 text-center text-black">{visit.place}</td>
+                <td className="border  px-3 sm:px-4 py-2 text-center text-black">{visit.objective}</td>
+                <td className="border  px-3 sm:px-4 py-2 text-center text-black">{visit.feedback}</td>
+                <td className="border  px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.parents}</td>
+                <td className="border  px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.teachers}</td>
+                <td className="border  px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.students}</td>
+                <td className="border  px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.male}</td>
+                <td className="border  px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.female}</td>
                 <td
-                  className="border border-gray-300 px-3 sm:px-4 py-2 text-center cursor-pointer text-blue-600 hover:underline "
+                  className="border px-3 sm:px-4 py-2 text-center cursor-pointer text-blue-600 hover:underline "
                   onClick={() => openModal('star', visit)}
                   role="button"
                   tabIndex={0}
@@ -679,9 +679,9 @@ console.log(modalContent);
                 >
                   {visit.star}
                 </td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black ">{visit.activities}</td>
+                <td className="border  px-3 sm:px-4 py-2 text-center text-black ">{visit.activities}</td>
                 <td
-                  className="border border-gray-300 px-3 sm:px-4 py-2 text-center cursor-pointer text-blue-600 hover:underline"
+                  className="border  px-3 sm:px-4 py-2 text-center cursor-pointer text-blue-600 hover:underline"
                   onClick={() => openModal('others', visit.others)}
                   role="button"
                   tabIndex={0}
@@ -708,7 +708,7 @@ console.log(modalContent);
           aria-labelledby="modal-star-title"
         >
           <div
-            className="bg-white rounded-lg shadow-lg max-w-md w-full p-6 mx-2 max-h-[calc(100vh-4rem)] overflow-y-auto"
+            className=" rounded-lg shadow-lg max-w-md w-full p-6 mx-2 max-h-[calc(100vh-4rem)] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <h2
@@ -753,7 +753,7 @@ console.log(modalContent);
           aria-labelledby="modal-others-title"
         >
           <div
-            className="bg-white rounded-lg shadow-lg max-w-md w-full p-6 mx-2 max-h-[calc(100vh-4rem)] overflow-y-auto"
+            className=" rounded-lg shadow-lg max-w-md w-full p-6 mx-2 max-h-[calc(100vh-4rem)] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <h2
@@ -763,11 +763,11 @@ console.log(modalContent);
               Other Data About Visit -:
             </h2>
 
-            <p className="text-center text-gray-800 text-base sm:text-lg px-2"><strong>Bus No:</strong> {modalContent.busNo}</p>
-            <p className="text-center text-gray-800 text-base sm:text-lg px-2"><strong>SMC Count:</strong> {modalContent.smcCount}</p>
-            <p className="text-center text-gray-800 text-base sm:text-lg px-2"><strong>NGO Member Count:</strong> {modalContent.ngoCount}</p>
-            <p className="text-center text-gray-800 text-base sm:text-lg px-2"><strong>Number of govt. officials:</strong> {modalContent.govtOfficials}</p>
-            <p className="text-center text-gray-800 text-base sm:text-lg px-2"><strong>Challenges if any:</strong> {modalContent.challenges}</p>
+            <p className="text-center text-black-800 text-base sm:text-lg px-2"><strong>Bus No:</strong> {modalContent.busNo}</p>
+            <p className="text-center  text-black-800 text-base sm:text-lg px-2"><strong>SMC Count:</strong> {modalContent.smcCount}</p>
+            <p className="text-center  text-black-800 text-base sm:text-lg px-2"><strong>NGO Member Count:</strong> {modalContent.ngoCount}</p>
+            <p className="text-center text-black-800 text-base sm:text-lg px-2"><strong>Number of govt. officials:</strong> {modalContent.govtOfficials}</p>
+            <p className="text-center text-black-800 text-base sm:text-lg px-2"><strong>Challenges if any:</strong> {modalContent.challenges}</p>
 
             {modalContent.images && modalContent.images.length > 0 && (
               <div>
