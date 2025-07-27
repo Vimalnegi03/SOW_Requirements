@@ -298,7 +298,7 @@ console.log(modalContent);
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             <div>
-              <label htmlFor="start" className="block mb-1 font-semibold">
+              <label htmlFor="start" className="block mb-1 font-semibold text-black">
                 Start Location *
               </label>
               <input
@@ -313,7 +313,7 @@ console.log(modalContent);
               />
             </div>
             <div>
-              <label htmlFor="end" className="block mb-1 font-semibold">
+              <label htmlFor="end" className="block mb-1 font-semibold text-black">
                 End Location *
               </label>
               <input
@@ -328,7 +328,7 @@ console.log(modalContent);
               />
             </div>
             <div>
-              <label htmlFor="dateRange" className="block mb-1 font-semibold">
+              <label htmlFor="dateRange" className="block mb-1 font-semibold text-black">
                 Date Range *
               </label>
               <input
@@ -343,7 +343,7 @@ console.log(modalContent);
               />
             </div>
             <div>
-              <label htmlFor="days" className="block mb-1 font-semibold">
+              <label htmlFor="days" className="block mb-1 font-semibold text-black">
                 Days *
               </label>
               <input
@@ -358,7 +358,7 @@ console.log(modalContent);
               />
             </div>
             <div>
-              <label htmlFor="team" className="block mb-1 font-semibold">
+              <label htmlFor="team" className="block mb-1 font-semibold text-black">
                 Team Members *
               </label>
               <input
@@ -373,7 +373,7 @@ console.log(modalContent);
               />
             </div>
             <div>
-              <label htmlFor="visitType" className="block mb-1 font-semibold">
+              <label htmlFor="visitType" className="block mb-1 font-semibold text-black">
                 Visit Type
               </label>
               <input
@@ -387,7 +387,7 @@ console.log(modalContent);
               />
             </div>
             <div>
-              <label htmlFor="place" className="block mb-1 font-semibold">
+              <label htmlFor="place" className="block mb-1 font-semibold text-black">
                 School
               </label>
               <input
@@ -401,7 +401,7 @@ console.log(modalContent);
               />
             </div>
             <div>
-              <label htmlFor="objective" className="block mb-1 font-semibold">
+              <label htmlFor="objective" className="block mb-1 font-semibold text-black">
                 Objective
               </label>
               <input
@@ -415,7 +415,7 @@ console.log(modalContent);
               />
             </div>
             <div>
-              <label htmlFor="feedback" className="block mb-1 font-semibold">
+              <label htmlFor="feedback" className="block mb-1 font-semibold text-black">
                 Feedback
               </label>
               <input
@@ -431,11 +431,11 @@ console.log(modalContent);
           </div>
 
           <fieldset className="border border-gray-300 p-4 rounded mb-6">
-            <legend className="font-semibold text-lg mb-3">Attendance</legend>
+            <legend className="font-semibold text-lg mb-3 text-black">Attendance</legend>
             <div className="grid grid-cols-1 sm:grid-cols-5 gap-4">
               {['teachers', 'parents', 'students', 'male', 'female'].map((key) => (
                 <div key={key}>
-                  <label htmlFor={`attendance.${key}`} className="block mb-1 capitalize font-semibold">
+                  <label htmlFor={`attendance.${key}`} className="block mb-1 capitalize font-semibold text-black">
                     {key}
                   </label>
                   <input
@@ -445,7 +445,7 @@ console.log(modalContent);
                     name={`attendance.${key}`}
                     value={formData.attendance[key]}
                     onChange={handleInputChange}
-                    className="input input-bordered w-full"
+                    className="input input-bordered w-full text-black"
                   />
                 </div>
               ))}
@@ -454,7 +454,7 @@ console.log(modalContent);
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div>
-              <label htmlFor="star" className="block mb-1 font-semibold">
+              <label htmlFor="star" className="block mb-1 font-semibold text-black">
                 Star (Student Name)
               </label>
               <input
@@ -468,7 +468,7 @@ console.log(modalContent);
               />
             </div>
             <div>
-              <label htmlFor="starImage" className="block mb-1 font-semibold">
+              <label htmlFor="starImage" className="block mb-1 font-semibold text-black">
                 Star Image URL
               </label>
               <input
@@ -477,13 +477,13 @@ console.log(modalContent);
                 name="starImage"
                 value={formData.starImage}
                 onChange={handleInputChange}
-                className="input input-bordered w-full"
+                className="input input-bordered w-full text-black"
                 placeholder="https://example.com/image.jpg"
               />
             </div>
           </div>
            <div className="mb-6">
-            <label htmlFor=" starReviews" className="block mb-1 font-semibold">
+            <label htmlFor=" starReviews" className="block mb-1 font-semibold text-black">
               Star Review
             </label>
             <input
@@ -492,12 +492,12 @@ console.log(modalContent);
               name="starReviews"
               value={formData. starReviews}
               onChange={handleInputChange}
-              className="input input-bordered w-full"
+              className="input input-bordered w-full text-black"
               placeholder="Medical Checkup, Awareness Session"
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="activities" className="block mb-1 font-semibold">
+            <label htmlFor="activities" className="block mb-1 font-semibold text-black">
               Activities
             </label>
             <input
@@ -506,16 +506,16 @@ console.log(modalContent);
               name="activities"
               value={formData.activities}
               onChange={handleInputChange}
-              className="input input-bordered w-full"
+              className="input input-bordered w-full text-black"
               placeholder="Medical Checkup, Awareness Session"
             />
           </div>
 
           <fieldset className="border border-gray-300 p-4 rounded mb-6">
-            <legend className="font-semibold text-lg mb-3">Others</legend>
+            <legend className="font-semibold text-lg mb-3 text-black">Others</legend>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
               <div>
-                <label htmlFor="others.busNo" className="block mb-1 font-semibold">
+                <label htmlFor="others.busNo" className="block mb-1 font-semibold text-black">
                   Bus No
                 </label>
                 <input
@@ -524,12 +524,12 @@ console.log(modalContent);
                   name="others.busNo"
                   value={formData.others.busNo}
                   onChange={handleInputChange}
-                  className="input input-bordered w-full"
+                  className="input input-bordered w-full text-black"
                   placeholder="MH3010"
                 />
               </div>
               <div>
-                <label htmlFor="others.smcCount" className="block mb-1 font-semibold">
+                <label htmlFor="others.smcCount" className="block mb-1 font-semibold text-black">
                   SMC Count
                 </label>
                 <input
@@ -539,12 +539,12 @@ console.log(modalContent);
                   name="others.smcCount"
                   value={formData.others.smcCount}
                   onChange={handleInputChange}
-                  className="input input-bordered w-full"
+                  className="input input-bordered w-full text-black"
                   placeholder="0"
                 />
               </div>
               <div>
-                <label htmlFor="others.ngoCount" className="block mb-1 font-semibold">
+                <label htmlFor="others.ngoCount" className="block mb-1 font-semibold text-black">
                   NGO Member Count
                 </label>
                 <input
@@ -554,12 +554,12 @@ console.log(modalContent);
                   name="others.ngoCount"
                   value={formData.others.ngoCount}
                   onChange={handleInputChange}
-                  className="input input-bordered w-full"
+                  className="input input-bordered w-full text-black"
                   placeholder="1"
                 />
               </div>
               <div>
-                <label htmlFor="others.govtOfficials" className="block mb-1 font-semibold">
+                <label htmlFor="others.govtOfficials" className="block mb-1 font-semibold text-black">
                   Number of Govt Officials
                 </label>
                 <input
@@ -569,12 +569,12 @@ console.log(modalContent);
                   name="others.govtOfficials"
                   value={formData.others.govtOfficials}
                   onChange={handleInputChange}
-                  className="input input-bordered w-full"
+                  className="input input-bordered w-full text-black"
                   placeholder="2"
                 />
               </div>
               <div className="col-span-full">
-                <label htmlFor="others.challenges" className="block mb-1 font-semibold">
+                <label htmlFor="others.challenges" className="block mb-1 font-semibold text-black">
                   Challenges
                 </label>
                 <textarea
@@ -583,7 +583,7 @@ console.log(modalContent);
                   rows="3"
                   value={formData.others.challenges}
                   onChange={handleInputChange}
-                  className="textarea textarea-bordered w-full"
+                  className="textarea textarea-bordered w-full text-black"
                   placeholder="Challenges if any"
                 />
               </div>
@@ -592,14 +592,14 @@ console.log(modalContent);
             <div>
               <p className="font-semibold mb-2">Event Images & Captions (up to 2)</p>
               {[0, 1].map((i) => (
-                <div key={i} className="mb-4">
+                <div key={i} className="mb-4 text-black">
                   <input
                     type="text"
                     placeholder="Image URL"
                     name={`others.images[${i}].url`}
                     value={formData.others.images[i].url}
                     onChange={handleInputChange}
-                    className="input input-bordered w-full mb-2"
+                    className="input input-bordered w-full mb-2 text-black"
                   />
                   <input
                     type="text"
@@ -607,7 +607,7 @@ console.log(modalContent);
                     name={`others.images[${i}].caption`}
                     value={formData.others.images[i].caption}
                     onChange={handleInputChange}
-                    className="input input-bordered w-full"
+                    className="input input-bordered w-full text-black"
                   />
                 </div>
               ))}
@@ -630,20 +630,20 @@ console.log(modalContent);
         <table className="min-w-[1100px] w-full border-collapse">
           <thead className="bg-gray-100 sticky top-0 z-20">
             <tr>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Visit Details</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Team Members</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Visit Type</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Visit Place</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Objective</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Feedback</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Parents</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Teachers</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Students</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Male</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Female</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Star</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Activities</th>
-              <th className="border border-gray-300 px-3 sm:px-4 py-3">Others</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Visit Details</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Team Members</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Visit Type</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Visit Place</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Objective</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Feedback</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Parents</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Teachers</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Students</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Male</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Female</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Star</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Activities</th>
+              <th className="border border-gray-300 px-3 sm:px-4 py-3 text-black">Others</th>
             </tr>
           </thead>
           <tbody>
@@ -651,24 +651,24 @@ console.log(modalContent);
               <tr key={visit.id || visit.start + visit.end} className="hover:bg-blue-50">
                 <td className="border border-gray-300 px-3 sm:px-4 py-2 text-left align-top">
                   <div>
-                    <div><strong>Start:</strong> {visit.start}</div>
-                    <div><strong>End:</strong> {visit.end}</div>
-                    <div><strong>Date:</strong> {visit.dateRange}</div>
-                    <div><strong>Days:</strong> {visit.days}</div>
+                    <div className='text-black'><strong>Start:</strong> {visit.start}</div>
+                    <div className='text-black'><strong>End:</strong> {visit.end}</div>
+                    <div className='text-black'><strong>Date:</strong> {visit.dateRange}</div>
+                    <div className='text-black'><strong>Days:</strong> {visit.days}</div>
                   </div>
                 </td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center">{visit.team}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center">{visit.visitType}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center">{visit.place}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center">{visit.objective}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center">{visit.feedback}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center">{visit.attendance.parents}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center">{visit.attendance.teachers}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center">{visit.attendance.students}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center">{visit.attendance.male}</td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center">{visit.attendance.female}</td>
+                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.team}</td>
+                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.visitType}</td>
+                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.place}</td>
+                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.objective}</td>
+                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.feedback}</td>
+                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.parents}</td>
+                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.teachers}</td>
+                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.students}</td>
+                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.male}</td>
+                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black">{visit.attendance.female}</td>
                 <td
-                  className="border border-gray-300 px-3 sm:px-4 py-2 text-center cursor-pointer text-blue-600 hover:underline"
+                  className="border border-gray-300 px-3 sm:px-4 py-2 text-center cursor-pointer text-blue-600 hover:underline "
                   onClick={() => openModal('star', visit)}
                   role="button"
                   tabIndex={0}
@@ -679,7 +679,7 @@ console.log(modalContent);
                 >
                   {visit.star}
                 </td>
-                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center">{visit.activities}</td>
+                <td className="border border-gray-300 px-3 sm:px-4 py-2 text-center text-black ">{visit.activities}</td>
                 <td
                   className="border border-gray-300 px-3 sm:px-4 py-2 text-center cursor-pointer text-blue-600 hover:underline"
                   onClick={() => openModal('others', visit.others)}
@@ -713,7 +713,7 @@ console.log(modalContent);
           >
             <h2
               id="modal-star-title"
-              className="text-2xl font-bold mb-4 text-center"
+              className="text-2xl font-bold mb-4 text-center text-black"
             >
               Student Details
             </h2>
@@ -721,14 +721,14 @@ console.log(modalContent);
             <img
               src={modalContent.starImage || 'https://images.pexels.com/photos/15612102/pexels-photo-15612102.jpeg'}
               alt={modalContent}
-              className="mx-auto mb-4 rounded w-full max-w-xs object-cover"
+              className="mx-auto mb-4 rounded w-full max-w-xs object-cover text-black"
               style={{ maxHeight: '200px', objectFit: 'cover' }}
             />
-            <p className="text-center text-lg font-semibold mb-2">{modalContent.star}</p>
-            <p className="text-center mb-4">
+            <p className="text-center text-lg font-semibold mb-2 text-black">{modalContent.star}</p>
+            <p className="text-center mb-4 text-black">
               <strong>School:</strong> {modalContent.place}
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-black">
               {modalContent?.starReviews}
             </p>
 
@@ -758,7 +758,7 @@ console.log(modalContent);
           >
             <h2
               id="modal-others-title"
-              className="text-2xl font-bold mb-4 text-center"
+              className="text-2xl font-bold mb-4 text-center text-black"
             >
               Other Data About Visit -:
             </h2>
