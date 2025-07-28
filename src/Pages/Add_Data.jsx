@@ -763,15 +763,15 @@ console.log(modalContent);
               Other Data About Visit -:
             </h2>
 
-            <p className="text-center text-black-800 text-base sm:text-lg px-2"><strong>Bus No:</strong> {modalContent.busNo}</p>
-            <p className="text-center  text-black-800 text-base sm:text-lg px-2"><strong>SMC Count:</strong> {modalContent.smcCount}</p>
-            <p className="text-center  text-black-800 text-base sm:text-lg px-2"><strong>NGO Member Count:</strong> {modalContent.ngoCount}</p>
-            <p className="text-center text-black-800 text-base sm:text-lg px-2"><strong>Number of govt. officials:</strong> {modalContent.govtOfficials}</p>
-            <p className="text-center text-black-800 text-base sm:text-lg px-2"><strong>Challenges if any:</strong> {modalContent.challenges}</p>
+            <p className="text-center text-black text-base sm:text-lg px-2"><strong>Bus No:</strong> {modalContent.busNo}</p>
+            <p className="text-center  text-black text-base sm:text-lg px-2"><strong>SMC Count:</strong> {modalContent.smcCount}</p>
+            <p className="text-center  text-black text-base sm:text-lg px-2"><strong>NGO Member Count:</strong> {modalContent.ngoCount}</p>
+            <p className="text-center text-black text-base sm:text-lg px-2"><strong>Number of govt. officials:</strong> {modalContent.govtOfficials}</p>
+            <p className="text-center text-black text-base sm:text-lg px-2"><strong>Challenges if any:</strong> {modalContent.challenges}</p>
 
             {modalContent.images && modalContent.images.length > 0 && (
               <div>
-                <strong className='text-black-800'>Images of Event:</strong>
+                <strong className='text-black'>Images of Event:</strong>
                 <div className="grid grid-cols-1 gap-4 mt-2">
                   {modalContent.images.map((imgObj, i) =>
                     imgObj.url ? (
