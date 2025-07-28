@@ -2,7 +2,7 @@ import React from 'react'
 
 function Cards() {
   return (
-    <div className='flex justify-around flex-wrap gap-8'>
+    <div className='flex justify-around flex-wrap gap-8 bg-white'>
       <div className="card group bg-base-100 w-96 shadow-sm border-[#eaeaea] transition-shadow duration-300 hover:shadow-[0_8px_24px_0_rgba(0,142,214,0.20)]">
         <figure className='mt-1.5'>
           <img

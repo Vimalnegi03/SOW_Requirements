@@ -11,7 +11,7 @@ function Reviews() {
       <h1 className="text-[#6F4A51] text-center text-4xl md:text-5xl font-extrabold mb-6 mt-4 ">
         Empowering Through Your Stories: Student Feedback Hub
       </h1>
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-8 bg-white">
         {/* Card 1 */}
         <div className="card bg-base-100 w-96 shadow-sm">
           <figure className="px-10 pt-10">
