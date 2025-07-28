@@ -708,12 +708,12 @@ console.log(modalContent);
           aria-labelledby="modal-star-title"
         >
           <div
-            className=" rounded-lg shadow-lg max-w-md w-full p-6 mx-2 max-h-[calc(100vh-4rem)] overflow-y-auto"
+            className=" rounded-lg shadow-lg max-w-md w-full p-6 mx-2 max-h-[calc(100vh-4rem)] overflow-y-auto bg-white"
             onClick={(e) => e.stopPropagation()}
           >
             <h2
               id="modal-star-title"
-              className="text-2xl font-bold mb-4 text-center "
+              className="text-2xl font-bold mb-4 text-center text-black "
             >
               Student Details
             </h2>
@@ -724,11 +724,11 @@ console.log(modalContent);
               className="mx-auto mb-4 rounded w-full max-w-xs object-cover "
               style={{ maxHeight: '200px', objectFit: 'cover' }}
             />
-            <p className="text-center text-lg font-semibold mb-2 ">{modalContent.star}</p>
-            <p className="text-center mb-4 ">
+            <p className="text-center text-lg font-semibold mb-2 text-black">{modalContent.star}</p>
+            <p className="text-center mb-4 text-black">
               <strong>School:</strong> {modalContent.place}
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-black">
               {modalContent?.starReviews}
             </p>
 
