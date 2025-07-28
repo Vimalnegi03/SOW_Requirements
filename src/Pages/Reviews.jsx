@@ -22,12 +22,12 @@ function Reviews() {
             />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Saniya</h2>
-            <p>
+            <h2 className="card-title text-black">Saniya</h2>
+            <p className=' text-black'> 
               The Skills on Wheels program has empowered me with practical skills in carpentry and helped me gain confidence to start small projects in my village.
             </p>
             <p>
-              <span className="font-bold">Govt. High School, Rajasthan</span>
+              <span className="font-bold  text-black">Govt. High School, Rajasthan</span>
             </p>
           </div>
         </div>
@@ -41,12 +41,12 @@ function Reviews() {
             />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Anjali Singh</h2>
-            <p>
+            <h2 className="card-title  text-black">Anjali Singh</h2>
+            <p className=' text-black'>
               I learned tailoring and embroidery, which not only improved my skills but also opened up opportunities for self-employment.
             </p>
             <p>
-              <span className="font-bold">Central School, Uttar Pradesh</span>
+              <span className="font-bold  text-black">Central School, Uttar Pradesh</span>
             </p>
           </div>
         </div>
@@ -60,12 +60,12 @@ function Reviews() {
             />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Vinny Patel</h2>
-            <p>
+            <h2 className="card-title  text-black">Vinny Patel</h2>
+            <p className=' text-black'>
               The mobile learning sessions helped me understand basic electrical work and safety, which is very useful in my daily life.
             </p>
             <p>
-              <span className="font-bold">Zilla Parishad School, Gujarat</span>
+              <span className="font-bold  text-black">Zilla Parishad School, Gujarat</span>
             </p>
           </div>
         </div>
@@ -79,12 +79,12 @@ function Reviews() {
             />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Sneha Reddy</h2>
-            <p>
+            <h2 className="card-title  text-black">Sneha Reddy</h2>
+            <p className=' text-black'>
               Skills on Wheels gave me the confidence to learn computer basics and improved my chances of higher education.
             </p>
             <p>
-              <span className="font-bold">District High School, Telangana</span>
+              <span className="font-bold  text-black">District High School, Telangana</span>
             </p>
           </div>
         </div>
