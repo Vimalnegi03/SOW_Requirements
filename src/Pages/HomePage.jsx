@@ -8,14 +8,14 @@ import { Link } from 'react-router-dom'
 import Headers from './Headers'
 function HomePage() {
   return (
-    <>
+    <div className='bg-white'>
       <Headers/>
       <Main/>
       <Mission/>
       <Cards/>
       <About/>
       <Fotter/>
-    </>
+    </div>
   )
 }
 

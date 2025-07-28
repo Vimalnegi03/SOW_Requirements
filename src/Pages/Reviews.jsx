@@ -6,7 +6,7 @@ import Holder from './Holder'
 import Fotter from './Fotter'
 function Reviews() {
   return (
-    <>
+    <div className='bg-white'>
       <Headers />
       <h1 className="text-[#6F4A51] text-center text-4xl md:text-5xl font-extrabold mb-6 mt-4 ">
         Empowering Through Your Stories: Student Feedback Hub
@@ -97,7 +97,7 @@ function Reviews() {
 </div>
 <ThreeDiv/>
 <Holder/>
-    </>
+    </div>
   )
 }
 
