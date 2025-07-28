@@ -753,12 +753,12 @@ console.log(modalContent);
           aria-labelledby="modal-others-title"
         >
           <div
-            className=" rounded-lg shadow-lg max-w-md w-full p-6 mx-2 max-h-[calc(100vh-4rem)] overflow-y-auto"
+            className=" rounded-lg shadow-lg max-w-md w-full p-6 mx-2 max-h-[calc(100vh-4rem)] overflow-y-auto bg-white"
             onClick={(e) => e.stopPropagation()}
           >
             <h2
               id="modal-others-title"
-              className="text-2xl font-bold mb-4 text-center "
+              className="text-2xl font-bold mb-4 text-center text-black "
             >
               Other Data About Visit -:
             </h2>
