@@ -778,7 +778,7 @@ console.log(modalContent);
                       <figure key={i} className="max-w-full">
                         <img src={imgObj.url} alt={imgObj.caption || `Event image ${i + 1}`} />
                         {imgObj.caption && (
-                          <figcaption className="text-center text-sm font-semibold text-black-800">
+                          <figcaption className="text-center text-sm font-semibold text-black">
                             {imgObj.caption}
                           </figcaption>
                         )}
