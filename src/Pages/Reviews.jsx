@@ -13,7 +13,7 @@ function Reviews() {
       </h1>
       <div className="flex flex-wrap justify-center gap-8 bg-white">
         {/* Card 1 */}
-        <div className="card bg-base-100 w-96 shadow-sm">
+        <div className="card  w-96 shadow-sm bg-white">
           <figure className="px-10 pt-10">
             <img
               src="https://images.pexels.com/photos/14075587/pexels-photo-14075587.jpeg"
@@ -32,7 +32,7 @@ function Reviews() {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="card bg-base-100 w-96 shadow-sm">
+        <div className="card bg-white w-96 shadow-sm">
           <figure className="px-10 pt-10">
             <img
               src="https://images.pexels.com/photos/31864391/pexels-photo-31864391.jpeg"
@@ -51,7 +51,7 @@ function Reviews() {
           </div>
         </div>
         {/* Card 3 */}
-        <div className="card bg-base-100 w-96 shadow-sm">
+        <div className="card bg-white w-96 shadow-sm ">
           <figure className="px-10 pt-10">
             <img
               src="https://images.pexels.com/photos/6936400/pexels-photo-6936400.jpeg"
@@ -70,7 +70,7 @@ function Reviews() {
           </div>
         </div>
         {/* Card 4 */}
-        <div className="card bg-base-100 w-96 shadow-sm">
+        <div className="card bg-white w-96 shadow-sm">
           <figure className="px-10 pt-10">
             <img
               src="https://images.pexels.com/photos/374872/pexels-photo-374872.jpeg"
